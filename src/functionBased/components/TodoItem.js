@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
-import styles from "./TodoItem.module.css"
+import styles from "./TodoItem.module.css";
+import { FaTrash } from "react-icons/fa";
 
 const TodoItem = props => {
     useEffect(() => {
@@ -49,7 +50,7 @@ const TodoItem = props => {
                 <button
                     onClick={() => props.deleteTodoProps(id)}
                 >
-                    Delete
+                    <FaTrash color="orangered" size="16px" className="delete-icon"/>
                 </button>
                 <span style={completed ? completedStyle : null}>
                     {title}
