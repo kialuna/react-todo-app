@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
 
 body {
@@ -11,10 +11,10 @@ body {
     color: #444;
     background: #fff;
     height: 100vh;
-    }
+}
 
 .container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -27,13 +27,13 @@ body {
     padding: 8rem 10px 4rem;
 }
 
-.form-container{
+.form-container {
     width: 100%;
     margin-bottom: 20px;
     display: flex;
     border-radius: calc(0.5 * 100px);
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
-    justify-content: space-evenly;    
+    justify-content: space-evenly;
 }
 
 .input-text {
@@ -68,4 +68,50 @@ body {
 .active-link {
     color: orangered;
     text-decoration: underline;
-  }
+}
+
+/* sidebar Nav */
+
+.navBar {
+    position: relative;
+}
+
+.navBar button {
+    position: fixed;
+    left: 40px;
+    top: 40px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.menuNav {
+    overflow-y: scroll;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    background: darkcyan;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    max-width: 290px;
+    z-index: 9;
+}
+
+.menuNav.showMenu {
+    width: 100%;
+}
+
+a {
+    display: block;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #3fffd2;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menuNav li:first-child {
+    margin-top: 7rem;
+}
