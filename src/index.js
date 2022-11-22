@@ -17,7 +17,7 @@ ReactDOM.render(
       <Navbar />
          <Routes>
             <Route path='/' element={<TodoContainer />}></Route>
-            <Route path="about/*" element={<About/>}></Route>
+            <Route path="/about/*" element={<About/>}></Route>
             <Route path='*' element={<NotMatch />}></Route>
          </Routes>
       </BrowserRouter>
